@@ -980,23 +980,42 @@ def dashboard():
 # START APPLICATION
 # =========================================================
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
 
-    print("")
+#     print("")
+#     print("==========================================")
+#     print(" CREDIT CARD FRAUD DETECTION SYSTEM")
+#     print("==========================================")
+#     print("Model loaded:", model is not None)
+#     print("Frontend:", FRONTEND_DIR)
+#     print("Database:", DATABASE_PATH)
+#     print("==========================================")
+#     print("Open this URL:")
+#     print("http://127.0.0.1:5000")
+#     print("==========================================")
+#     print("")
+# if __name__ == "__main__":
+#     import os
+#     port = int(os.environ.get("PORT", 5000))
+#     app.run(host="0.0.0.0", port=port)
+
+  # =========================================================
+# START APPLICATION
+# =========================================================
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+
     print("==========================================")
     print(" CREDIT CARD FRAUD DETECTION SYSTEM")
     print("==========================================")
     print("Model loaded:", model is not None)
     print("Frontend:", FRONTEND_DIR)
     print("Database:", DATABASE_PATH)
+    print("Port:", port)
     print("==========================================")
-    print("Open this URL:")
-    print("http://127.0.0.1:5000")
-    print("==========================================")
-    print("")
-if __name__ == "__main__":
-    import os
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
 
-  
+    app.run(
+        host="0.0.0.0",
+        port=port
+    )
